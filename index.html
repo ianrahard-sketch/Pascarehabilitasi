@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal Pelatihan dan Rehabilitasi</title>
+  <title>Portal Pelatihan Rehabilitasi</title>
 
   <style>
  * {
@@ -189,14 +189,40 @@
       max-width: 100%;
     }
   }
+    
+.layanan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.layanan-kartu {
+  background: #ffffff;
+  border: 1px solid #e0e6ef;
+  border-top: 4px solid #d6b45b;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 5px 18px #142d4b0b;
+}
+
+.layanan-kartu h2 {
+  color: #12366b;
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .layanan-grid {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Portal Pelatihan dan Rehabilitasi</h1>
-    <p>Informasi, pembelajaran, dan koordinasi kegiatan</p>
+    <h1>Portal Pelatihan Rehabilitasi</h1>
+    <p>Peningkatan Kemampuan Petugas Rehabilitasi tentang UTC 19</p>
   </header>
 
   <nav>
@@ -209,94 +235,96 @@
   </nav>
 
   <main>
-    <section class="kartu">
+    <section class="kartu" id="beranda">
       <h2>Selamat Datang</h2>
       <p>
-        Selamat datang di Portal Pelatihan dan Rehabilitasi.
-        Temukan informasi kegiatan, presensi, ruang pertemuan,
+        Selamat datang di Portal Pelatihan Rehabilitasi.
+        Temukan informasi kegiatan, presensi, pretest, posttest, ruang pertemuan, Virtual Background
         dan materi pembelajaran dalam satu tempat.
       </p>
     </section>
-      <section class="kartu" id="pretest">
-      <h2>Pretest</h2>
-      <p>Gunakan tautan berikut untuk mengisi Pretest.</p>
-       <a class="tombol" href="https://forms.google.com">
-         Pretest
-         <a/>
-    </section>
-    <section class="kartu" id="presensi">
-      <h2>Presensi Peserta</h2>
-      <p>Gunakan tautan berikut untuk mengisi kehadiran.</p>
-      <a class="tombol" href="https://forms.google.com">
-        Isi Presensi
-      </a>
-    </section>
 
-    <section class="kartu" id="meeting">
-      <h2>Virtual Meeting</h2>
-      <p>Akses ruang pertemuan daring sesuai jadwal kegiatan.</p>
-      <a class="tombol" href="https://meet.google.com">
-        Masuk Meeting
-      </a>
-    </section>
+    <div class="layanan-grid">
 
-    <section class="kartu">
-      <h2>Virtual Background</h2>
-      <p>Unduh atau akses latar belakang resmi kegiatan.</p>
-      <a class="tombol" href="#kontak">
-        Informasi Background
-      </a>
-    </section>
+      <section class="layanan-kartu" id="pretest">
+        <h2>Pretest</h2>
+        <p>
+          Isi Pretest.
+        </p>
+        <a class="tombol" href="https://forms.google.com">
+          Isi Pretest
+        </a>
+      </section>
+      
+      <section class="layanan-kartu" id="presensi">
+        <h2>Presensi Peserta</h2>
+        <p>
+          Isi presensi sesuai hari kehadiran selama kegiatan
+          berlangsung pada 3–6 November 2026.
+        </p>
+        <a class="tombol" href="https://forms.google.com">
+          Isi Presensi
+        </a>
+      </section>
 
-    <section class="kartu" id="materi">
-      <h2>Materi Kegiatan</h2>
-      <p>Materi pembelajaran akan tersedia melalui tautan berikut.</p>
-      <a class="tombol" href="#kontak">
-        Lihat Materi
-      </a>
-    </section>
+      <section class="layanan-kartu" id="meeting">
+        <h2>Virtual Meeting</h2>
+        <p>
+          bergabung ke pertemuan daring kegiatan Peningkatan Kemampuan UTC 19.
+          Gunakan format nama yang telah ditentukan panitia.
+        </p>
+        <a class="tombol" href="https://meet.google.com">
+          Masuk Meeting
+        </a>
+      </section>
 
-    <section class="kartu" id="posttest">
-      <h2>Posttest</h2>
-      <p>Gunakan tautan berikut untuk mengisi Posttest.</p>
-       <a class="tombol" href="https://forms.google.com">
-         Posttest
-         <a/>
-    </section>
-  </main>
-<section class="kartu" id="informasi-penting"
-           style="background-color: #fff8e5; border-left: 5px solid #d6b45b;">
+      <section class="layanan-kartu" id="background">
+        <h2>Virtual Background</h2>
+        <p>
+          Unduh dan gunakan virtual background resmi
+          selama kegiatan berlangsung.
+        </p>
+        <a class="tombol" href="#kontak">
+          Lihat Background
+        </a>
+      </section>
+      
+      <section class="layanan-kartu" id="posttest">
+        <h2>Posttest</h2>
+        <p>
+          Isi Posttest.
+        </p>
+        <a class="tombol" href="https://forms.google.com">
+          Isi Posttest
+        </a>
+      </section>
 
-    <h2>ⓘ Informasi Penting</h2>
+      <section class="layanan-kartu" id="materi">
+        <h2>Materi Kegiatan</h2>
+        <p>
+          Materi kegiatan dapat diakses dan diunduh setelah
+          kegiatan selesai.
+        </p>
+        <a class="tombol" href="#materi">
+          Informasi Materi
+        </a>
+      </section>
 
-    <ol>
-      <li>
-        Peserta diharapkan mengisi presensi sesuai hari kehadiran
-        (3 s.d. 6 November 2026).
-      </li>
+      <section class="layanan-kartu" id="informasi-penting">
+        <h2>ⓘ Informasi Penting</h2>
+        <ol>
+          <li>Isi presensi sesuai hari kehadiran, 3–6 November 2026.</li>
+          <li>Gunakan format <strong>Nama Satker_Nama Peserta</strong> saat bergabung ke virtual meeting.</li>
+          <li>Unduh dan gunakan virtual background resmi selama kegiatan.</li>
+          <li><strong>Materi kegiatan dapat diunduh setelah kegiatan selesai.</strong></li>
+          <li>Apabila terdapat kendala, silakan menghubungi panitia.</li>
+        </ol>
+      </section>
 
-      <li>
-        Gunakan format <strong>Nama Satker_Nama Peserta</strong>
-        saat bergabung ke virtual meeting.
-      </li>
-
-      <li>
-        Unduh dan gunakan virtual background resmi BNN
-        selama kegiatan berlangsung.
-      </li>
-
-      <li>
-        <strong>Materi kegiatan dapat diunduh setelah kegiatan selesai.</strong>
-      </li>
-
-      <li>
-        Apabila terdapat kendala, silakan menghubungi panitia.
-      </li>
-    </ol>
-
-  </section>
-  <footer>
+    </div> 
+    <footer>
     <p>Portal Pelatihan dan Rehabilitasi</p>
+      <p>Direktorat Pascarehabilitasi</p>
   </footer>
 
 </body>
