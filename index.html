@@ -159,7 +159,61 @@
   padding: 5px 0;
   border-bottom: 1px solid #e5eaf2;
 }
-    
+  .tabel-peserta {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.tabel-peserta table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tabel-peserta th {
+  background: #12366b;
+  color: #ffffff;
+  text-align: left;
+  padding: 12px;
+  border-bottom: 3px solid #d6b45b;
+}
+
+.tabel-peserta td {
+  padding: 11px 12px;
+  border-bottom: 1px solid #e5eaf2;
+  vertical-align: top;
+}
+
+.tabel-peserta tr:nth-child(even) {
+  background: #f2f6fc;
+}
+
+.tabel-peserta th:first-child,
+.tabel-peserta td:first-child {
+  min-width: 150px;
+}
+
+.tabel-peserta th:last-child,
+.tabel-peserta td:last-child {
+  min-width: 180px;
+}  
+    .tombol-peserta {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 11px 18px;
+  background: #12366b;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.tombol-peserta:hover {
+  background: #d6b45b;
+  color: #17243a;
+}
   #informasi-penting {
   grid-column: 1 / -1;
   width: 100%;
@@ -293,50 +347,16 @@
     </section>
 
     <div class="layanan-grid">
-<!-- KARTU KELAS A -->
-<section class="layanan-kartu" id="kelas-a">
-  <h2>Kelas A</h2>
-  <p>Daftar nama peserta Kelas A.</p>
+<!-- KARTU DAFTAR PESERTA -->
+<section class="layanan-kartu">
+  <h2>Daftar Kelas</h2>
+  <p>Lihat daftar nama dan satuan kerja peserta.</p>
 
-  <details class="daftar-peserta">
-    <summary>Lihat Daftar Peserta</summary>
-    <ul>
-      <li>Nama Peserta A1</li>
-      <li>Nama Peserta A2</li>
-      <li>Nama Peserta A3</li>
-    </ul>
-  </details>
+  <a href="kelas.html" class="tombol-peserta">
+    Lihat Daftar Kelas 
+  </a>
 </section>
 
-<!-- KARTU KELAS B -->
-<section class="layanan-kartu" id="kelas-b">
-  <h2>Kelas B</h2>
-  <p>Daftar nama peserta Kelas B.</p>
-
-  <details class="daftar-peserta">
-    <summary>Lihat Daftar Peserta</summary>
-    <ul>
-      <li>Nama Peserta B1</li>
-      <li>Nama Peserta B2</li>
-      <li>Nama Peserta B3</li>
-    </ul>
-  </details>
-</section>
-
-<!-- KARTU KELAS C -->
-<section class="layanan-kartu" id="kelas-c">
-  <h2>Kelas C</h2>
-  <p>Daftar nama peserta Kelas C.</p>
-
-  <details class="daftar-peserta">
-    <summary>Lihat Daftar Peserta</summary>
-    <ul>
-      <li>Nama Peserta C1</li>
-      <li>Nama Peserta C2</li>
-      <li>Nama Peserta C3</li>
-    </ul>
-  </details>
-</section>
       <section class="layanan-kartu" id="pretest">
         <h2>Pretest</h2>
         <p>
