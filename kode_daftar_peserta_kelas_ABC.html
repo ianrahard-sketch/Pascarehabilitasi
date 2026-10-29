@@ -1,0 +1,275 @@
+<!-- Tambahkan CSS berikut ke dalam tag <style> di index.html -->
+<style>
+
+/* Daftar peserta per kelas */
+.daftar-peserta summary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #12366b;
+  color: #ffffff;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
+.daftar-peserta summary::-webkit-details-marker { display: none; }
+.daftar-peserta summary::after { content: "  +"; color: #d6b45b; font-size: 18px; }
+.daftar-peserta[open] summary::after { content: "  −"; }
+.daftar-peserta summary:hover { background: #d6b45b; color: #17243a; }
+.tabel-peserta { width: 100%; overflow-x: auto; margin-top: 16px; }
+.tabel-peserta table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tabel-peserta th { background: #12366b; color: #fff; text-align: left; padding: 12px; border-bottom: 3px solid #d6b45b; }
+.tabel-peserta td { padding: 11px 12px; border-bottom: 1px solid #e5eaf2; vertical-align: top; }
+.tabel-peserta tbody tr:nth-child(even) { background: #f2f6fc; }
+.tabel-peserta th:first-child, .tabel-peserta td:first-child { min-width: 150px; }
+.tabel-peserta th:last-child, .tabel-peserta td:last-child { min-width: 180px; }
+
+</style>
+
+<!-- Tambahkan tiga kartu berikut di dalam <div class="layanan-grid"> -->
+
+<section class="layanan-kartu" id="kelas-a">
+  <h2>Kelas A</h2>
+  <p>Daftar 67 nama peserta beserta satuan kerja.</p>
+  <details class="daftar-peserta">
+    <summary>Lihat Daftar Peserta</summary>
+    <div class="tabel-peserta">
+      <table>
+        <thead><tr><th>No.</th><th>Nama Peserta</th><th>Satker</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Slamet Fatrika</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>2</td><td>Fatmawaty Susanty Hae, S.Th</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>3</td><td>Eko Wahyu Setyawan, AMK.</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>4</td><td>Kallista</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>5</td><td>Edy Kurnawan</td><td>Balai Rehabilitasi Narkotika Tanah Merah</td></tr>
+          <tr><td>6</td><td>Fadly Abdul Hakim</td><td>Balai Rehabilitasi Narkotika Tanah Merah</td></tr>
+          <tr><td>7</td><td>Riani Wati, S.Kep.Ns</td><td>BNN Kab. Hulu Sungai Selatan</td></tr>
+          <tr><td>8</td><td>Sarjoko.S.K.M</td><td>BNN Kab.Poso</td></tr>
+          <tr><td>9</td><td>Muhammad Ridwan Nasution, S.Psi</td><td>BNN Kabupaten Cilacap</td></tr>
+          <tr><td>10</td><td>Dali Sylvinia,S.KM</td><td>BNN Kabupaten Kediri</td></tr>
+          <tr><td>11</td><td>Lilis Kurnia Sari.,A.Md.Kep</td><td>BNN Kabupaten Sumedang</td></tr>
+          <tr><td>12</td><td>Indri Kesumawati</td><td>BNN Kota Bandung</td></tr>
+          <tr><td>13</td><td>Rita Novita Sari, A.Md.,S.T</td><td>BNN Kota Cirebon</td></tr>
+          <tr><td>14</td><td>Hamidah</td><td>BNN Kota Depok</td></tr>
+          <tr><td>15</td><td>Illiyun Kurniah, SKM</td><td>BNN Kota Jakarta Utara</td></tr>
+          <tr><td>16</td><td>dr. Eva Anggraeni</td><td>BNN Kota Metro</td></tr>
+          <tr><td>17</td><td>Della Ayu Hendrawan</td><td>BNN Kota Mojokerto</td></tr>
+          <tr><td>18</td><td>Indri Anggriani, S.Psi</td><td>BNN Kota Pangkal Pinang</td></tr>
+          <tr><td>19</td><td>Muhammad Rais, S.Sos</td><td>BNN Kota Sawahlunto</td></tr>
+          <tr><td>20</td><td>Lukman Hakim Said</td><td>BNN Kota Surabaya</td></tr>
+          <tr><td>21</td><td>Ika Nur Widayati SST</td><td>BNN kota Surabaya</td></tr>
+          <tr><td>22</td><td>Mahsuriani Saragih</td><td>BNN Kota Tebing Tinggi</td></tr>
+          <tr><td>23</td><td>Nurhayati</td><td>BNN Kota Yogyakarta</td></tr>
+          <tr><td>24</td><td>Go Elisabeth</td><td>BNN Provinsi Jawa Timur</td></tr>
+          <tr><td>25</td><td>Fitri Kasliyani Dewi,  S.Kep., Ns</td><td>BNN Provinsi Kalimantan Selatan</td></tr>
+          <tr><td>26</td><td>Rifqi Alwafi Putra Nusantara, S. Psi</td><td>BNN Provinsi Kalimantan Tengah</td></tr>
+          <tr><td>27</td><td>Marliana Zainuddin</td><td>BNN Provinsi Sulawesi Barat</td></tr>
+          <tr><td>28</td><td>Septia Dwi  Safrani, M.Psi., Psikolog</td><td>BNN Provinsi Sumatera Barat</td></tr>
+          <tr><td>29</td><td>Suprapto, S.Sos</td><td>BNNK Batang Hari</td></tr>
+          <tr><td>30</td><td>Muh. Andi kurniawan</td><td>BNNK Bima</td></tr>
+          <tr><td>31</td><td>Vincentia Henny Widowati</td><td>BNNK Bogor</td></tr>
+          <tr><td>32</td><td>Addi Haadiyatna, S.Kep.</td><td>BNNK Ciamis</td></tr>
+          <tr><td>33</td><td>Irwan suhandra</td><td>BNNK kabupaten Solok</td></tr>
+          <tr><td>34</td><td>Asep Suhendri, S.Psi</td><td>BNNK Kendal</td></tr>
+          <tr><td>35</td><td>Litwinayanti Perwita, S.Kep, Ners, MKM.</td><td>BNNK Kotawaringin Timur</td></tr>
+          <tr><td>36</td><td>Navi Utami</td><td>BNNK Lumajang</td></tr>
+          <tr><td>37</td><td>Langlang Buana Putri SR, S.KM</td><td>BNNK Magelang</td></tr>
+          <tr><td>38</td><td>Kurniasari,S,Kep.,M.Kes</td><td>BNNK Ogan Ilir</td></tr>
+          <tr><td>39</td><td>dr.Silfia Mela</td><td>BNNK Pasaman Barat</td></tr>
+          <tr><td>40</td><td>Dyah Aridha Wardyani</td><td>BNNK Sleman</td></tr>
+          <tr><td>41</td><td>Rahma Fitrah, M.Psi.,Psikolog</td><td>BNNK Tarakan</td></tr>
+          <tr><td>42</td><td>Febrinaldy Syafni, Amkl, S.Sos</td><td>BNNK Temanggung</td></tr>
+          <tr><td>43</td><td>Cut Mirnawati</td><td>BNNP Aceh</td></tr>
+          <tr><td>44</td><td>Abdul Diinil Haq</td><td>BNNP Bengkulu</td></tr>
+          <tr><td>45</td><td>Septi Dwi Hastuti</td><td>BNNP DIY</td></tr>
+          <tr><td>46</td><td>Yolanda Mohune, Amd.Kep</td><td>BNNP Gorontalo</td></tr>
+          <tr><td>47</td><td>Laras Ambar Sari</td><td>BNNP Jambi</td></tr>
+          <tr><td>48</td><td>Syamustofa W.S., S.Psi.</td><td>BNNP Jawa Tengah</td></tr>
+          <tr><td>49</td><td>Tutik Handayani, Amd.Kep., S.Pd.</td><td>BNNP Jawa Timur</td></tr>
+          <tr><td>50</td><td>Sofia Rini,S.Kep.M.M</td><td>BNNP Kalimantan Tengah</td></tr>
+          <tr><td>51</td><td>dr. Ayu Wedyanti</td><td>BNNP Kepulauan Riau</td></tr>
+          <tr><td>52</td><td>Dian Eko Prasetyo, S.Kep</td><td>BNNP Lampung</td></tr>
+          <tr><td>53</td><td>Apt Irmawati S.Farm</td><td>BNNP Papua Barat</td></tr>
+          <tr><td>54</td><td>Astuti Tolemo.A.Md.Kep</td><td>BNNP Sulawesi Tengah</td></tr>
+          <tr><td>55</td><td>Hariyadi, S.Sos</td><td>BNNP Sulawesi Selatan</td></tr>
+          <tr><td>56</td><td>Selfina Alimbutoo</td><td>BNNP Sulawesi Tengah</td></tr>
+          <tr><td>57</td><td>Siska Andriany, S.Psi</td><td>BNNP Sumatera Selatan</td></tr>
+          <tr><td>58</td><td>dr. Nur Aida Sri Wahyuni, M. Kes</td><td>BNNP Sumatera Selatan</td></tr>
+          <tr><td>59</td><td>Muhammad Zachari Ardi, S.S.</td><td>Loka Rehabilitasi BNN Deli Serdang</td></tr>
+          <tr><td>60</td><td>Ruth Sarah Dina</td><td>IPWL Gemuni</td></tr>
+          <tr><td>61</td><td>dr. Sri Handayani</td><td>Kanwil Riau</td></tr>
+          <tr><td>62</td><td>Dini Rahmawati</td><td>Lapas Narkotika Kelas III Sawahlunto</td></tr>
+          <tr><td>63</td><td>Denis Victor Riandy, S.Sos</td><td>Lapas Narkotika Kelas IIA Tanjungpinang</td></tr>
+          <tr><td>64</td><td>Dewi Taroci Killi</td><td>PLKS Pondok Pemulihan Doulos</td></tr>
+          <tr><td>65</td><td>Sri Wahyudiningsih, S. Kep. Ns</td><td>Rutan Kelas IIB Pinrang</td></tr>
+          <tr><td>66</td><td>Septi Setyaningsih</td><td>Yayasan Bidayatussalikin</td></tr>
+          <tr><td>67</td><td>Hanif Kurniawati</td><td>Yayasan Orbit Surabaya</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<section class="layanan-kartu" id="kelas-b">
+  <h2>Kelas B</h2>
+  <p>Daftar 67 nama peserta beserta satuan kerja.</p>
+  <details class="daftar-peserta">
+    <summary>Lihat Daftar Peserta</summary>
+    <div class="tabel-peserta">
+      <table>
+        <thead><tr><th>No.</th><th>Nama Peserta</th><th>Satker</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Jihan Aji Purnama, S.Kep.</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>2</td><td>Rosita Dewi Eka Renel, S.Si. Teol., M.Si.</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>3</td><td>Aprilia Pratiwi Nugrahani, S.Psi.</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>4</td><td>Mery, S.Kep., Ns</td><td>Balai Rehabilitasi Baddoka</td></tr>
+          <tr><td>5</td><td>Fatwa</td><td>Balai Rehabilitasi Narkotika Tanah Merah</td></tr>
+          <tr><td>6</td><td>Suci Tiarahayu</td><td>BNN Kab Karimun</td></tr>
+          <tr><td>7</td><td>dr. Rosie Erythrina br Pinem, MKM</td><td>BNN Kab. Karo</td></tr>
+          <tr><td>8</td><td>Arrasyidun</td><td>BNN Kabuapaten Bima</td></tr>
+          <tr><td>9</td><td>Kasma, SKM</td><td>BNN Kabupaten Donggala</td></tr>
+          <tr><td>10</td><td>Januar Riko Asriwan, S.Psi</td><td>BNN Kabupaten Kubu Raya</td></tr>
+          <tr><td>11</td><td>Arina Nurhasanah, S.Kep</td><td>BNN kabupaten Sumedang</td></tr>
+          <tr><td>12</td><td>dr. Jimmy Wahyu Perdana Kusuma</td><td>BNN Kota Batam</td></tr>
+          <tr><td>13</td><td>Sri Yunita Dewi, S.M</td><td>BNN Kota Deepok</td></tr>
+          <tr><td>14</td><td>Ela Bestia, S.Sos.M.Si.</td><td>BNN Kota Depok</td></tr>
+          <tr><td>15</td><td>Indah Megawaty, S.Psi</td><td>BNN Kota Malang</td></tr>
+          <tr><td>16</td><td>dr. Sugeng Agustyoko, M.Kes.</td><td>BNN Kota Mojokerto</td></tr>
+          <tr><td>17</td><td>Yulira Margareth, S.Kep</td><td>BNN Kota Palangka Raya</td></tr>
+          <tr><td>18</td><td>Eva Solyna Tambunan, S. Farm., Apt.</td><td>BNN Kota Pematangsiantar</td></tr>
+          <tr><td>19</td><td>Kunti MIta Sari, S.K.M</td><td>BNN Kota Surabaya</td></tr>
+          <tr><td>20</td><td>Anneke Devy Ratnasari</td><td>BNN Kota Surabaya</td></tr>
+          <tr><td>21</td><td>Oktavia Ruthdian Setiawati</td><td>BNN Kota Surakarta</td></tr>
+          <tr><td>22</td><td>Dila Oktaputrining Catur Susandi</td><td>BNN Kota Yogyakarta</td></tr>
+          <tr><td>23</td><td>Irnawati, S.K.M</td><td>BNN Provinsi Jawa Tengah</td></tr>
+          <tr><td>24</td><td>Arlita Lusiana Wardani</td><td>BNN Provinsi Jawa Timur</td></tr>
+          <tr><td>25</td><td>Astrid Swandira Balkis, S.Psi</td><td>BNN Provinsi Kalimantan Tengah</td></tr>
+          <tr><td>26</td><td>Bintari Anggre Yeni, SKM.,M.H.</td><td>BNN Provinsi Lampung</td></tr>
+          <tr><td>27</td><td>Asnidar, S. Farm., Apt</td><td>BNN Provinsi Sulawesi Selatan</td></tr>
+          <tr><td>28</td><td>Ns. Istati, S.Kep</td><td>BNN Provinsi Sumatera Selatan</td></tr>
+          <tr><td>29</td><td>Mailis, SE</td><td>BNNK Batang Hari</td></tr>
+          <tr><td>30</td><td>Rahmawati S.Kep</td><td>BNNK Bima</td></tr>
+          <tr><td>31</td><td>Imam Maulana</td><td>BNNK Bogor</td></tr>
+          <tr><td>32</td><td>Ainun Ainiyah, S.Kep.,Ns</td><td>BNNK Gresik</td></tr>
+          <tr><td>33</td><td>Nurhasanah</td><td>BNNK Karawang</td></tr>
+          <tr><td>34</td><td>Ns. Gorby Chandra Arnowo, S.Kep</td><td>BNNK Kepulauan Sangihe</td></tr>
+          <tr><td>35</td><td>Arif Hidayat, S.Kep.,Ners</td><td>BNNK Lampung Selatan</td></tr>
+          <tr><td>36</td><td>Sekar Larasati</td><td>BNNK Magelang</td></tr>
+          <tr><td>37</td><td>Anna Dewi Pulungan, SKM</td><td>BNNK Mandailing Natal</td></tr>
+          <tr><td>38</td><td>Naris Dwi Lestari</td><td>BNNK OKI</td></tr>
+          <tr><td>39</td><td>Akhyar Sani, A. Md</td><td>BNNK Pidie Jaya</td></tr>
+          <tr><td>40</td><td>Septyandi Ashari</td><td>BNNK Tabalong</td></tr>
+          <tr><td>41</td><td>Rahma Fitrah,M.Psi.,Psikolog</td><td>BNNK Tarakan</td></tr>
+          <tr><td>42</td><td>Mariyani Husen</td><td>BNNK Tidore Kepulauan</td></tr>
+          <tr><td>43</td><td>Kusnul Khotimah</td><td>BNNP Bali</td></tr>
+          <tr><td>44</td><td>Rezza Arizona</td><td>BNNP Bengkulu</td></tr>
+          <tr><td>45</td><td>dr. Windy Elfasari</td><td>BNNP DIY</td></tr>
+          <tr><td>46</td><td>Desta Rahayu Pratiwi</td><td>BNNP Jabar</td></tr>
+          <tr><td>47</td><td>Ns. Vilora Hutabarat, S.Kep.</td><td>BNNP Jawa Barat</td></tr>
+          <tr><td>48</td><td>Novi Erliyani</td><td>BNNP Jawa Tengah</td></tr>
+          <tr><td>49</td><td>Kusmayadi, A.Md.Kep, S.K.M, M.H</td><td>BNNP Kalimantan Barat</td></tr>
+          <tr><td>50</td><td>dr. Risna Sari</td><td>BNNP Kalimantan Timur</td></tr>
+          <tr><td>51</td><td>dr. Arnina Emmilia Monica</td><td>BNNP Kepulauan Riau</td></tr>
+          <tr><td>52</td><td>Muhammad Romadona, S.Psi</td><td>BNNP Lampung</td></tr>
+          <tr><td>53</td><td>M. Yunus Putra, S.Psi</td><td>BNNP Riau</td></tr>
+          <tr><td>54</td><td>Muliati, M.Si., Apt</td><td>BNNP Sulawesi Tenggara</td></tr>
+          <tr><td>55</td><td>Bambang Wahyudin</td><td>BNNP Sulawesi Selatan</td></tr>
+          <tr><td>56</td><td>dr. Reinne G. Wowiling, Mars</td><td>BNNP Sulawesi Utara</td></tr>
+          <tr><td>57</td><td>Dewi Rosa Rianti, S. Psi</td><td>BNNP Sumatera Barat</td></tr>
+          <tr><td>58</td><td>Ratna Juwita Rambe, S.Psi, M.Psi, Psikolog</td><td>BNNP Sumatera Utara</td></tr>
+          <tr><td>59</td><td>Adams Resmitha Thalib</td><td>Loka Rehabilitasi Narkotika Kalianda</td></tr>
+          <tr><td>60</td><td>Femmy Sarnianzah</td><td>IPWL Karunia Insani Bengkulu</td></tr>
+          <tr><td>61</td><td>dr. Wildan Moulddiana Ar.</td><td>Lapas Kelas IIA Samarinda</td></tr>
+          <tr><td>62</td><td>Ulfa Rustan, S.H.</td><td>Lapas Perempuan Kelas Iia Sungguminasa</td></tr>
+          <tr><td>63</td><td>Dody Wahyudi</td><td>Lembaga Rehabilitasi Yayasan Bunda Chadijah</td></tr>
+          <tr><td>64</td><td>Hamrianto</td><td>RSJ Tmpan Riau</td></tr>
+          <tr><td>65</td><td>Triyana</td><td>Soerojo Hospital</td></tr>
+          <tr><td>66</td><td>Edga Zeta Cancri</td><td>Yayasan Garda Pelita Hati Surabaya</td></tr>
+          <tr><td>67</td><td>Yulisa Pipi Marmis</td><td>Yayasan Sarasehan</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<section class="layanan-kartu" id="kelas-c">
+  <h2>Kelas C</h2>
+  <p>Daftar 66 nama peserta beserta satuan kerja.</p>
+  <details class="daftar-peserta">
+    <summary>Lihat Daftar Peserta</summary>
+    <div class="tabel-peserta">
+      <table>
+        <thead><tr><th>No.</th><th>Nama Peserta</th><th>Satker</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Dindo Harmaya</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>2</td><td>Oscar Meidy Kastanya, S.Psi.</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>3</td><td>Andhika Rachman Hakim</td><td>Balai Besar Rehabilitasi BNN</td></tr>
+          <tr><td>4</td><td>Muhammad Haswin, S.Ft., Physio</td><td>Balai Rehabilitasi Narkotika Baddoka</td></tr>
+          <tr><td>5</td><td>Bismo Haryo Dwi Putranto, SKM</td><td>Balai Rehabilitasi Narkotika Tanah Merah</td></tr>
+          <tr><td>6</td><td>Saefudin Dian Herdiana, S.I.Kom</td><td>BNN Kab. Garut</td></tr>
+          <tr><td>7</td><td>Ellyah Andriany</td><td>BNN Kab. Sumbawa</td></tr>
+          <tr><td>8</td><td>Fitriana Mayangsari</td><td>BNN Kabupaten Blitar</td></tr>
+          <tr><td>9</td><td>Fadilla Irawan, SKM</td><td>BNN Kabupaten Karimun</td></tr>
+          <tr><td>10</td><td>Mellysa Anggraeni Puspasari, Amd.Kep</td><td>BNN Kabupaten Magelang</td></tr>
+          <tr><td>11</td><td>Nymas Theresya Mayayu Pramana, AMKL</td><td>BNN Kabupaten Trenggalek</td></tr>
+          <tr><td>12</td><td>Yusuf Muharam</td><td>BNN Kota Cimahi</td></tr>
+          <tr><td>13</td><td>Ns. Ida Ayu Purnama Dewi, S.Kep</td><td>BNN Kota Denpasar</td></tr>
+          <tr><td>14</td><td>Rahmat wahidji, A.Md.Kep</td><td>BNN Kota Gorontalo</td></tr>
+          <tr><td>15</td><td>dr. Cintami Angjaya</td><td>BNN Kota Manado</td></tr>
+          <tr><td>16</td><td>Selviana Kalimatus Sa&#x27;diyah</td><td>BNN Kota Mojokerto</td></tr>
+          <tr><td>17</td><td>St.Aisyah Husain,SKM</td><td>BNN Kota Palopo</td></tr>
+          <tr><td>18</td><td>Qorri Harumillah Al Padangi, S.S.T</td><td>BNN Kota Sawahlunto</td></tr>
+          <tr><td>19</td><td>Kunti Mita Sari, S.K.M.</td><td>BNN Kota Surabaya</td></tr>
+          <tr><td>20</td><td>dr. Putri Damayanti</td><td>BNN Kota Surabaya</td></tr>
+          <tr><td>21</td><td>Asep Saepulloh, S.Kep., Ners</td><td>BNN Kota Tasikmalaya</td></tr>
+          <tr><td>22</td><td>Sumasdita, S. Psi</td><td>BNN Kota Yogyakarta</td></tr>
+          <tr><td>23</td><td>Putu Indri Meiyana Sari, S.Tr.Kes</td><td>BNN Provinsi Bali</td></tr>
+          <tr><td>24</td><td>Nurul Intan Sintya Dharmayanti, AMd.Kep</td><td>BNN Provinsi Jawa Timur</td></tr>
+          <tr><td>25</td><td>Bayu Pratama, SKM</td><td>BNN Provinsi Kalimantan Tengah</td></tr>
+          <tr><td>26</td><td>Ostri Atika Wiwitan, S.Psi.</td><td>BNN Provinsi Lampung</td></tr>
+          <tr><td>27</td><td>Abutzar Giffari B., S.Psi</td><td>BNN Provinsi Sulawesi Tengah</td></tr>
+          <tr><td>28</td><td>Dinda Mauludi, S.Psi</td><td>BNNK Bangka Selatan</td></tr>
+          <tr><td>29</td><td>Panca Bintoro. S.Kep</td><td>BNNK Bengkulu Selatan</td></tr>
+          <tr><td>30</td><td>Sutantri Akbar</td><td>BNNK Binjai</td></tr>
+          <tr><td>31</td><td>Rohsandi Putra Badaruddin, S.Psi</td><td>BNNK Bone</td></tr>
+          <tr><td>32</td><td>dr . Jeppry Kurniawan,M.Kes</td><td>BNNK Jayapura</td></tr>
+          <tr><td>33</td><td>Sylvia Yunita</td><td>BNNK Kendal</td></tr>
+          <tr><td>34</td><td>I Kadek Kencana Pradnya Dinata, A.Md.Kep</td><td>BNNK Klungkung</td></tr>
+          <tr><td>35</td><td>Nona Aprianti Sinaga, S.Kep,Ns,MPd</td><td>BNNK Langakat</td></tr>
+          <tr><td>36</td><td>Fitri Apriliani</td><td>BNNK Magelang</td></tr>
+          <tr><td>37</td><td>Citra, S.Psi</td><td>BNNK Nunukan</td></tr>
+          <tr><td>38</td><td>Winda Sari Kesuma</td><td>BNNK OKI</td></tr>
+          <tr><td>39</td><td>Muh Ihsan Usman</td><td>BNNK Sleman</td></tr>
+          <tr><td>40</td><td>dr. Wastie Ratu Bua&#x27; Toding</td><td>BNNK Tanjungpinang</td></tr>
+          <tr><td>41</td><td>Tinsi Oktinsi Batoran</td><td>BNNK Tarakan</td></tr>
+          <tr><td>42</td><td>Nur Ayu Irawan, S.Kep.,Ns</td><td>BNNK Tual</td></tr>
+          <tr><td>43</td><td>Aidil Fitriansyah</td><td>BNNP Bengkulu</td></tr>
+          <tr><td>44</td><td>Rina Apriliani Sugiarti</td><td>BNNP DIY</td></tr>
+          <tr><td>45</td><td>Wiwin Herwina, S.Si., M.Si</td><td>BNNP DKI Jakarta</td></tr>
+          <tr><td>46</td><td>Sherly Meidya Ova</td><td>BNNP Jambi</td></tr>
+          <tr><td>47</td><td>Nungky E.P.L</td><td>BNNP Jawa Tengah</td></tr>
+          <tr><td>48</td><td>Ika Rahani Rosyidah</td><td>BNNP Jawa Timur</td></tr>
+          <tr><td>49</td><td>Tulus, S.Kep.,Ns., M.A.P</td><td>BNNP Kalimantan Utara</td></tr>
+          <tr><td>50</td><td>Melly Puspita Sari, S.Psi., Psikolog</td><td>BNNP Kepulauan Riau</td></tr>
+          <tr><td>51</td><td>Erwin S, S.P., M.Kes</td><td>BNNP Lampung</td></tr>
+          <tr><td>52</td><td>Aswendo Dwitantyanov, M.Psi.</td><td>BNNP Papua Barat</td></tr>
+          <tr><td>53</td><td>Made Raditya Astawa, S.Kep.</td><td>BNNP Sulawesi Selatan</td></tr>
+          <tr><td>54</td><td>Remillia Tumangkeng, S.Kep.,Ns</td><td>BNNP Sulawesi Utara</td></tr>
+          <tr><td>55</td><td>Ridwan Saepullah</td><td>BNNP Sulawesi Tengah</td></tr>
+          <tr><td>56</td><td>Sandreza</td><td>BNNP Sumatera Barat</td></tr>
+          <tr><td>57</td><td>Istati</td><td>BNNP Sumatera Selatan</td></tr>
+          <tr><td>58</td><td>Aviandri Naie Caesar Zulbadri</td><td>Loka Rehabilitasi BNN Batam</td></tr>
+          <tr><td>59</td><td>Ayu, SH. MH</td><td>Founder Yayasan Plus Enam Dua Nusantara</td></tr>
+          <tr><td>60</td><td>Rillah Fitrah</td><td>IPWL Yayasan Karunia Insani Cabang Sumbar</td></tr>
+          <tr><td>61</td><td>Indra Firdaus., A.Md., S.H</td><td>Lapas Kelas IIb Sijunjung</td></tr>
+          <tr><td>62</td><td>Herlina Syafitri.Az.S.Kep.,Ners.</td><td>Lapas Perempuan Kelas IIA Tangerang</td></tr>
+          <tr><td>63</td><td>Achmad Zamrony</td><td>Nawasena Arsa Indonesia</td></tr>
+          <tr><td>64</td><td>Andreas Okta Pasaribu</td><td>Rumah Tahanan Negara Kelas I Medan</td></tr>
+          <tr><td>65</td><td>Sukma Dwi Mukhromi</td><td>Yayasan Arrahman</td></tr>
+          <tr><td>66</td><td>Melky Tuasela</td><td>Yayasan Indocharis Jogja</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
