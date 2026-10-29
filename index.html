@@ -118,7 +118,48 @@
     color: #17243a;
     border-color: #d6b45b;
   }
+/* Tombol untuk membuka daftar peserta */
+.daftar-peserta summary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #12366b;
+  color: #ffffff;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
 
+.daftar-peserta summary::-webkit-details-marker {
+  display: none;
+}
+
+.daftar-peserta summary::after {
+  content: "  +";
+  color: #d6b45b;
+  font-size: 18px;
+}
+
+.daftar-peserta[open] summary::after {
+  content: "  −";
+}
+
+.daftar-peserta summary:hover {
+  background: #d6b45b;
+  color: #17243a;
+}
+
+.daftar-peserta ul {
+  margin-top: 16px;
+  padding-left: 24px;
+}
+
+.daftar-peserta li {
+  padding: 5px 0;
+  border-bottom: 1px solid #e5eaf2;
+}
+    
   #informasi-penting {
   grid-column: 1 / -1;
   width: 100%;
@@ -252,7 +293,50 @@
     </section>
 
     <div class="layanan-grid">
+<!-- KARTU KELAS A -->
+<section class="layanan-kartu" id="kelas-a">
+  <h2>Kelas A</h2>
+  <p>Daftar nama peserta Kelas A.</p>
 
+  <details class="daftar-peserta">
+    <summary>Lihat Daftar Peserta</summary>
+    <ul>
+      <li>Nama Peserta A1</li>
+      <li>Nama Peserta A2</li>
+      <li>Nama Peserta A3</li>
+    </ul>
+  </details>
+</section>
+
+<!-- KARTU KELAS B -->
+<section class="layanan-kartu" id="kelas-b">
+  <h2>Kelas B</h2>
+  <p>Daftar nama peserta Kelas B.</p>
+
+  <details class="daftar-peserta">
+    <summary>Lihat Daftar Peserta</summary>
+    <ul>
+      <li>Nama Peserta B1</li>
+      <li>Nama Peserta B2</li>
+      <li>Nama Peserta B3</li>
+    </ul>
+  </details>
+</section>
+
+<!-- KARTU KELAS C -->
+<section class="layanan-kartu" id="kelas-c">
+  <h2>Kelas C</h2>
+  <p>Daftar nama peserta Kelas C.</p>
+
+  <details class="daftar-peserta">
+    <summary>Lihat Daftar Peserta</summary>
+    <ul>
+      <li>Nama Peserta C1</li>
+      <li>Nama Peserta C2</li>
+      <li>Nama Peserta C3</li>
+    </ul>
+  </details>
+</section>
       <section class="layanan-kartu" id="pretest">
         <h2>Pretest</h2>
         <p>
